@@ -1,0 +1,41 @@
+.social-item a:hover {
+    color: rgb(112, 114, 248);
+}
+
+.menu-item a:hover {
+    color: rgb(20, 223, 223);
+}
+
+.slick-arrow:hover {
+    filter: invert(44%) sepia(72%) brightness(100%) saturate(2489%) hue-rotate(210deg) contrast(99%)
+}
+
+.item-sponsor a:hover {
+    font-size: 220%;
+    color: #e0cfcf;
+}
+
+.game-item:hover, .news-item:hover {
+    animation-duration: 1.5s;
+    animation-name: levitation;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out; /*ease - плавно початок і кінець*/
+    animation-direction: alternate; /*туди і назад*/
+}
+
+.game-button:hover, .news-button:hover {
+    background-position: left bottom;
+    color: white;
+    cursor: pointer;
+}
+
+.video button:hover {
+    cursor: pointer;
+    background: white;
+    color: rgb(75, 155, 246);
+}
+
+.send-div button:hover {
+    transform: scale(1.5);
+    cursor: pointer;
+}

@@ -1,0 +1,14 @@
+@keyframes levitation {
+    0% {
+        transform: 0;
+    }
+    100% {
+        transform: translateY(-4%);  
+    }
+}
+
+@keyframes size {
+    100% {
+        transform: scale(1.5)
+    }
+}
