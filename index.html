@@ -2,35 +2,37 @@
 <html lang="ua">
 <head>
     <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--font-family: 'Comfortaa', cursive;-->
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
     <!--font-awesome-->
     <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
     <!--Main Fonts of Text-Slider-->
     <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap" rel="stylesheet">
-    <!--Animation-->
+    <!--CSS-->
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/hover.css">
     <link rel="stylesheet" href="css/keyframes.css">
+    <link rel="stylesheet" href="css/media.css">
+    <!--Slider-->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <!--Icon-->
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>XGame</title>
 </head>
 <body>
     <header>
     <!--====================UP HEADER====================-->
         <div class="up general">
-            <span style="color: rgb(97, 83, 83); font-family: 'Comfortaa', cursive;" class="animated fadeInLeft delay-0.5s header_text"><b>Тепер кіберспорт і в Україні!</b></span>
+            <span style="color: #615353; font-family: 'Comfortaa', cursive;" class="animated fadeInLeft delay-0.5s header_text"><b>Тепер кіберспорт і в Україні!</b></span>
             <div class="logo">
                 <a href="" class="animated fadeInUp"><img src="/img/logo.png" alt=""></a>
             </div>
+            <!--====================SOCIAL MENU====================-->
             <div class="social">
-                <!--====================SOCIAL MENU====================-->
-                <ul class="animated fadeInDown social-list">
+                <ul class="social-list animated fadeInDown">
                     <li class="social-item"><a target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
                     <li class="social-item"><a target="_blank" href="https://web.telegram.org/"><i class="fab fa-telegram-plane"></i></a></li>
                     <li class="social-item"><a target="_blank" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
@@ -42,7 +44,7 @@
         <div class="down">
             <!--====================MAIN MENU====================-->
             <div class="menu">
-                <ul class="animated fadeInUp menu-list">
+                <ul class="menu-list animated fadeInUp">
                     <li class="menu-item"><a href="#general"><b>Головна</b></a></li>
                     <li class="menu-item"><a href="#cybersport"><b>Кіберспорт</b></a></li>
                     <li class="menu-item"><a href="#games"><b>Ігри</b></a></li>
@@ -54,10 +56,10 @@
     </header>
     <!--====================MAIN SLIDER====================-->
     <section id="general">
-        <div class="animated fadeInDown delay-0.5s slow main-title">
+        <div class="main-title animated fadeInDown delay-0.5s slow">
             <span>Кіберспорт</span>
         </div>
-        <div class="animated fadeInUp delay-0.7s slow main-subtitle">
+        <div class="main-subtitle animated fadeInUp delay-0.7s slow">
             <span>Поринь у світ ігор, стань кращим із кращих та отримай можливість прийняти участь у міжнародних турнірах</span>
         </div>
         <div class="slider single-item">
@@ -71,19 +73,19 @@
     <!--====================SPONSORS====================-->
     <section id="cybersport" class="sponsors">
         <ul class="list-sponsors">
-            <li class="wow animated zoomIn delay-0.6s slow item-sponsor">
+            <li class="item-sponsor wow animated zoomIn delay-0.6s slow">
                 <a href="https://www.microsoft.com/uk-ua" target="_blank"><i class="fab fa-windows"></i></a>
             </li>
-            <li class="wow animated zoomIn delay-0.6s slow item-sponsor">
+            <li class="item-sponsor wow animated zoomIn delay-0.6s slow">
                 <a href="https://www.google.org/" target="_blank"><i class="fab fa-google"></i></a>
             </li>
-            <li class="wow animated zoomIn delay-0.6s slow item-sponsor">
+            <li class="item-sponsor wow animated zoomIn delay-0.6s slow">
                 <a href="https://store.steampowered.com/" target="_blank"><i class="fab fa-steam-symbol"></i></a>
             </li>
-            <li class="wow animated zoomIn delay-0.6s slow item-sponsor">
+            <li class="item-sponsor wow animated zoomIn delay-0.6s slow">
                 <a href="https://angrycreative.se/" target="_blank"><i class="fab fa-angrycreative"></i></a>
             </li>
-            <li class="wow animated zoomIn delay-0.6s slow item-sponsor">
+            <li class="item-sponsor wow animated zoomIn delay-0.6s slow">
                 <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
             </li>
         </ul>
@@ -91,11 +93,11 @@
     <!--====================CYBERSPORT====================-->
     <section class="cybersport">
         <div class="cybersport-text">
-            <span class="wow animated fadeInLeft slow delay-1s cybersport-text1 ctext1">І так</span>
-            <span class="wow animated fadeInLeft slow delay-1s cybersport-text1 ctext2">Що ж таке Кіберспорт?</span>
-            <span class="wow animated fadeInLeft slow delay-1s cybersport-text1 ctext3">Це спортивні змагання з відеоігор, 
-                переважно шутери від першої особи, стратегії реального часу та 
-                спортивні симулятори. Коли мова йде про спорт, навряд чи першим, 
+            <span class="cybersport-text1 ctext1 wow animated fadeInLeft delay-1s slow">І так</span>
+            <span class="cybersport-text1 ctext2 wow animated fadeInLeft delay-1s slow">Що ж таке Кіберспорт?</span>
+            <span class="cybersport-text1 ctext3 wow animated fadeInLeft delay-1s slow">
+                Це спортивні змагання з відеоігор, 
+                переважно шутери від першої особи. Коли мова йде про спорт, навряд чи першим, 
                 що спадає на думку, є людина, яка сидить за комп'ютером. 
                 Проте не в 21 столітті!
                 Завдяки відеоіграм професійні команди виграють на турнірах мільйони долларів. 
@@ -105,14 +107,14 @@
                 збирає стадіони фанатів не менші ніж на спортивних змаганнях. Можливо ти і твоя
                 команда стане майбутніми чемпіонами ;)</span>
         </div>
-        <div class="wow animated fadeInDown slow delay-1.5s cybersport-img" data-wow-offset="200">
+        <div class="cybersport-img wow animated fadeInDown delay-1.5s slow" data-wow-offset="200">
             <img src="/img/cybersport.jpg" alt="">
         </div>
     </section>  
     <!--====================GAMES====================-->
     <section id="games" class="games">
-        <h2 class="wow animated fadeInDown slow delay-1.5s" data-wow-offset="200">Список Ігор</h2>
-        <ul class="wow animated fadeInUp slow delay-1.5s game-list" data-wow-offset="200">
+        <h2 class="wow animated fadeInDown delay-1.5s slow" data-wow-offset="200">Список Ігор</h2>
+        <ul class="game-list wow animated fadeInUp delay-1.5s slow" data-wow-offset="200">
             <li class="game-item">
                 <h3 class="game-name">CSGO</h3>
                 <img class="game-pic" src="img/games/csgo.jpg" alt="">
@@ -141,8 +143,8 @@
     </div>
     <!--====================NEWS====================-->
     <section id="news" class="news">
-        <h2 class="wow animated fadeInDown slow delay-1s">Новини</h2>
-        <ul class="wow animated fadeInUp slow delay-1.5s news-list" data-wow-offset="200">
+        <h2 class="wow animated fadeInDown delay-1s slow">Новини</h2>
+        <ul class="news-list wow animated fadeInUp delay-1.5s slow" data-wow-offset="200">
             <li class="news-item">
                 <img class="news-pic" src="img/news/news-1.jpg" alt="">
                 <span>Компанія GOOGLE представила перший у світі Квантовий Комп'ютер</span>
@@ -163,7 +165,7 @@
     <!--====================CONTACTS====================-->
     <section id="contacts" class="contacts">
         <h2 class="wow animated fadeInUp delay-1s slow">Форма зворотнього зв'язку</h2>
-        <form class="backform wow animated fadeIn slower delay-1.5s" action="mail.php" method="post">
+        <form class="backform wow animated fadeIn delay-1.5s slower" action="mail.php" method="post">
             <div class="name-div">
                 <h2>Ім'я</h2>
                 <input type="text" placeholder="Як до вас звертатись?" maxlength="50" name="name" required>

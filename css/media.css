@@ -1,0 +1,168 @@
+
+
+/*Зменшую заголовок кіберспорту і розмір блоків*/
+
+@media (max-width: 875px){
+    .ctext2 {
+        font-size: 24px;
+    }
+    .cybersport-text {
+        grid-template-rows: 0.5fr 0.5fr 3fr;
+    }
+}
+
+/*розмір тексту в новинах*/
+
+@media (max-width: 850px){
+    .news span {
+        font-size: 3vh;
+    }
+}
+
+/*розмір тексту на головному слайдері*/
+
+@media (max-width: 800px){
+    .main-title {
+        font-size: 96px;
+    }
+    .main-subtitle {
+        font-size: 30px;
+    }
+}
+
+/*розміщення game-items and news-items на всю ширину та збільшення шрифту*/
+
+@media (max-width: 716px){
+    .cybersport {
+        grid-template-columns: 0fr 2fr 1fr;
+    }
+    .ctext1 {
+        height: 0;
+        font-size: 0;
+    }
+    .cybersport-text {
+        grid-template-rows: 0fr 1fr 5fr;
+        margin-left: 2%;
+    }
+    .game-list {
+        margin: 5% 2%;
+    }
+    .game-name {
+        font-size: 16px;
+    }
+    .news-list {
+        margin: 15% 2%;
+    }
+}
+
+/*шрифт у кіберспорт. Перебудова форми*/
+
+@media (max-width: 600px){
+
+    .cybersport {
+        grid-template-columns: 0 2fr 0;
+        grid-template-areas: 
+                ". T I";
+        text-align: center;
+        align-items: center;
+    }
+    .ctext2 {
+        justify-content: center;
+        font-size: 32px;
+    }
+    .ctext3 {
+        font-size: 14px;
+    }
+    .cybersport-img {
+        overflow: hidden;
+    }
+
+    .contacts {
+        height: 100vh;
+    }
+    .backform {
+        margin-top: 5%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 2fr 3fr 1fr;
+        grid-template-areas: 
+                "FN"
+                "FE"
+                "FT"
+                "FBUT";
+    }
+    .backform input {
+        margin-top: 4%;
+    }
+    .send-div {
+        padding-top: 5%;
+    }
+    textarea {
+        height: 15vh;
+    }
+    input {
+        height: 8vh;
+    }
+    
+}
+
+/*збільшення новин та ігор*/
+
+@media (max-width: 554px){
+    .news {
+        height: 250vh;
+    }
+    .game-name {
+        font-size: 24px;
+    }
+    .games {
+        height: 330vh;
+    }
+    .game-pic {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+    .news h2, .games h2 {
+        font-size: 36px;
+    }
+    .news-list, .game-list {
+        margin-top: 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .news-item, .game-item {
+        margin-top: 17%;
+        font-size: 24px;
+    }
+}
+
+/*розмір тексту на головному слайдері, розмір спонсорів*/
+
+@media (max-width: 550px){
+    .main-title {
+        font-size: 70px;
+        margin-top: 25vh;
+    }
+    .main-subtitle {
+        margin-top: 51vh;
+    }
+    .item-sponsor {
+        font-size: 150%;
+    }
+}
+
+/*розмір тексту на головному слайдері*/
+
+@media (max-width: 450px){
+    .main-subtitle {
+        font-size: 24px;
+    }
+}
+
+/*зменшення заголовку в cybersport*/
+
+@media (max-width: 354px) {
+    .ctext2 {
+        font-size: 22px;
+    }
+}

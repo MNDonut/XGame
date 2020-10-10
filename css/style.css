@@ -1,11 +1,6 @@
-/*посування картинки вліво при зменшенні екрану*/
-/*ховання логотипу при зменшені*/
-/*зменшення центрального тексту*/
-/*логотип в up, menu на повну ширину*/
-/*запуск анімації cybersport image залежно від відстані*/
-/*zoom на картинку cybersport*/
 /*ПРО ГРУ добавити сайти*/
 /*градієнт не доходить до кінця кнопки ігор*/
+/*php gmail*/
 
 * {
     padding: 0;
@@ -29,7 +24,7 @@ textarea {
     color: #d66b07;
     font-family: 'Roboto Slab', serif;
     resize: none;
-    width: 80%;
+    width: 70%;
     height: 70%;
     outline: none;
     border-radius: 56px;
@@ -60,11 +55,12 @@ input {
 header {
     background-color: black;
     display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: 50px 100px;
+    grid-template-columns: 4fr;
+    grid-template-rows: 70px 100px;
     grid-template-areas: 
-    ". h1 ."
-    ". h2 .";
+    "h1"
+    "h2";
+    padding: 0 5%;
 }
 
 
@@ -73,15 +69,29 @@ header {
 
 .up {
     grid-area: h1;
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: 
+                "cyb logo soc";
+    border-bottom: 1px solid #3d3b3b;
     align-items: center;
-    border-bottom: 1px solid rgb(61, 59, 59);
+}
+
+.header_text {
+    grid-area: cyb;
+    text-align: center;
+}
+
+.logo {
+    grid-area: logo;
+    align-items: center;
+    text-align: center;
 }
 
 .social-list {
     display: flex;
+    grid-area: soc;
+    justify-content: flex-end;
 }
 
 .social-item a {
@@ -97,31 +107,25 @@ header {
 .down {
     grid-area: h2;
     display: grid;
-    grid-auto-columns: 1fr 3fr;
     grid-template-areas: 
-            "logo menu";
+            "menu";
 }
 
 .menu {
     grid-area: menu;
     display: flex;
     align-items: center;
+    text-align: center;
 }
 
 .menu-list {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
     width: 100%;
-}
-
-.logo {
-    grid-area: logo;
-    display: flex;
-    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .menu-item a {
-    color: rgb(56, 88, 90);
+    color: #38585a;
     font-size: 18px;
     font-family: 'Comfortaa', cursive;
     transition: 0.5s;
@@ -135,10 +139,11 @@ header {
 
 .slider {
     overflow: hidden;
-    max-height: 84.5vh;
+    max-height: 100vh;
     filter: brightness(50%);
     z-index: 1;
     position: absolute;
+    max-width: 100%;
 }
 
 /*     Hide slides one by one     */
@@ -147,13 +152,12 @@ header {
     position: relative;
 }
 
-
 /*==================== ARROWS ====================*/
 
 
 .slider .slick-arrow {
     position: absolute;
-    top: 40%;
+    top: 50%;
     z-index: 2;
     font-size: 0;
     height: 50px;
@@ -186,7 +190,7 @@ header {
     font-size: 128px;
     position: absolute;
     width: 100%;
-    padding-top: 6%;
+    margin-top: 15vh;
     font-family: 'Roboto Slab', serif;
     text-align: center;
 }
@@ -197,7 +201,7 @@ header {
     font-size: 40px;
     position: absolute;
     width: 80%;
-    top: 65%;
+    margin-top: 50vh;
     left: 10%;
     font-family: 'Roboto Slab', serif;
     text-align: center; 
@@ -208,7 +212,7 @@ header {
 
 
 .sponsors {
-    height: 200px;
+    height: 20vh;
     width: 100%;
     background: black;
     color: white;
@@ -220,7 +224,7 @@ header {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     justify-content: space-around;
     text-align: center;
-    height: 200px;
+    height: 20vh;
     align-items: center;
 }
 
@@ -238,7 +242,6 @@ header {
     width: 100%;
     height: 80vh;
     background-color: #0f0f0f;
-    background-size: 80% 80%;
     display: grid;
     grid-template-columns: 0.5fr 2.5fr 3fr;
     grid-template-areas: 
@@ -246,12 +249,12 @@ header {
 }
 
 .cybersport-text {
-    max-height: 60vh;
+    max-height: 80vh;
     grid-area: T;
     display: grid;
-    grid-template-rows: 1fr 1fr 3fr;
+    grid-template-rows: 0.5fr 1fr 3fr;
     color: white;
-    margin-top: 5%;
+    padding-right: 5%;
 }
 
 .ctext1 {
@@ -272,10 +275,8 @@ header {
 .ctext3 {
     font-family: 'Comfortaa', cursive;
     color: #848484;
-    font-size: 1.1vw;
+    font-size: 2.5vh;
     line-height: 150%;
-    padding-top: 5px;
-    padding-right: 30px;
 }
 
 .cybersport-img {
@@ -286,8 +287,8 @@ header {
 }
 
 .cybersport-img img {
-    max-height: 100%;
-    max-width: 100%;
+    max-height: 80vh;
+    max-width: 50vw;
 }
 
 
@@ -365,14 +366,14 @@ header {
     max-width: 100%;
     height: 20vh;
     background: url(/img/video.jpg);
-    box-shadow: inset 0px 16px 60px -1px rgba(0,0,0,0.72);
+    box-shadow: inset 0px 16px 60px -1px #000000b8;
     justify-content: center;
     display: flex;
     align-items: center;
 }
 
 .video button {
-    background: rgb(75, 155, 246);
+    background: #4b9bf6;
     color: white;
     text-align: center;
     border: 0;
@@ -414,13 +415,13 @@ header {
 .news-item {
     height: 60vh;
     display: grid;
-    grid-template-rows: 2fr 2fr 1fr;
-    background-color: #000000;
+    grid-template-rows: 2fr 1.5fr 1fr;
+    background-color: none;
     margin: 0 5%;
 }
 
 .news span {
-    font-size: 30px;
+    font-size: 4vh;
     color: #3786ff;
     font-family: 'Roboto Slab', serif;
     display: flex;
@@ -446,7 +447,7 @@ header {
 
 .news-button {
     margin-top: 5%;
-    height: 70%;
+    height: 10vh;
     width: 80%;
     color: #257bfd;
     background: linear-gradient(to left, white 50%, #257bfd 50%);
@@ -464,7 +465,7 @@ header {
 .contacts {
     height: 80vh;
     max-width: 100%;
-    background: rgb(10, 10, 10);
+    background: #0a0a0a;
     text-align: center;
 }
 
@@ -482,11 +483,11 @@ header {
     color: #405e8b;
     font-family: 'Roboto Slab', serif;
     display: grid;
-    grid-template-columns: 0.5fr 2fr 0.5fr 2fr 0.5fr;
-    grid-template-rows: 2fr 2fr;
+    grid-template-columns: 2fr 0.5fr 2fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas: 
-                ". FN FBUT FT ."
-                ". FE FBUT FT .";
+                "FN FBUT FT"
+                "FE FBUT FT";
 }
 
 .name-div {
@@ -506,7 +507,7 @@ header {
 }
 
 .backform textarea {
-    margin-top: 5%;
+    margin-top: 2%;
 }
 
 .send-div {
@@ -522,6 +523,6 @@ header {
     font-size: 30px;
     background: none;
     border: none;
-    color: rgb(27, 248, 182);
+    color: #1bf8b6;
     transition: 0.5s ease-in-out;
 }
