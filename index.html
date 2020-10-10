@@ -23,11 +23,14 @@
 <body>
     <header>
     <!--====================UP HEADER====================-->
-        <div id="general" class="up general">
+        <div class="up general">
             <span style="color: rgb(97, 83, 83); font-family: 'Comfortaa', cursive;" class="animated fadeInLeft delay-0.5s header_text"><b>Тепер кіберспорт і в Україні!</b></span>
+            <div class="logo">
+                <a href="" class="animated fadeInUp"><img src="/img/logo.png" alt=""></a>
+            </div>
             <div class="social">
                 <!--====================SOCIAL MENU====================-->
-                <ul class="animated fadeInRight social-list">
+                <ul class="animated fadeInDown social-list">
                     <li class="social-item"><a target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
                     <li class="social-item"><a target="_blank" href="https://web.telegram.org/"><i class="fab fa-telegram-plane"></i></a></li>
                     <li class="social-item"><a target="_blank" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
@@ -37,12 +40,9 @@
         </div>
         <!--====================DOWN HEADER====================-->
         <div class="down">
-            <div class="logo">
-                <a href="" class="animated fadeInLeft"><img src="/img/logo.png" alt=""></a>
-            </div>
             <!--====================MAIN MENU====================-->
             <div class="menu">
-                <ul class="animated fadeInUp slow menu-list">
+                <ul class="animated fadeInUp menu-list">
                     <li class="menu-item"><a href="#general"><b>Головна</b></a></li>
                     <li class="menu-item"><a href="#cybersport"><b>Кіберспорт</b></a></li>
                     <li class="menu-item"><a href="#games"><b>Ігри</b></a></li>
@@ -53,7 +53,7 @@
         </div>
     </header>
     <!--====================MAIN SLIDER====================-->
-    <section>
+    <section id="general">
         <div class="animated fadeInDown delay-0.5s slow main-title">
             <span>Кіберспорт</span>
         </div>
@@ -162,11 +162,11 @@
     </section>
     <!--====================CONTACTS====================-->
     <section id="contacts" class="contacts">
-        <h2 class="wow animated fadeInDown delay-1s slow">Форма зворотнього зв'язку</h2>
-        <form class="backform wow animated fadeInDown delay-1.3s slow" action="mail.php" method="post">
+        <h2 class="wow animated fadeInUp delay-1s slow">Форма зворотнього зв'язку</h2>
+        <form class="backform wow animated fadeIn slower delay-1.5s" action="mail.php" method="post">
             <div class="name-div">
                 <h2>Ім'я</h2>
-                <input type="text" placeholder="Як до вас звертатись?" maxlength="50" name="text" required>
+                <input type="text" placeholder="Як до вас звертатись?" maxlength="50" name="name" required>
             </div>
             <div class="email-div">
                 <h2>Електронна пошта</h2>
@@ -174,10 +174,10 @@
             </div>
             <div class="text-div">
                 <h2>Повідомлення</h2>
-                <textarea placeholder="Тут ви можете запропонувати щось або подати заявку на участь у змаганнях :)" name="message" maxlength="450" required cols="30" rows="10"></textarea>
+                <textarea placeholder="Тут ви можете запропонувати щось або подати заявку на участь у змаганнях :)" name="message" maxlength="450" required></textarea>
             </div>
             <div class="send-div">
-                <button class="send" type="submit"><i class="fas fa-paper-plane" name="bbbb"></i></button>
+                <button class="send" id="sendinfo" type="sumbit"><i class="fas fa-paper-plane"></i></button>
             </div>
         </form>
     </section>

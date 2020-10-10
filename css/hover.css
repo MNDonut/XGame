@@ -7,7 +7,7 @@
 }
 
 .slick-arrow:hover {
-    filter: invert(44%) sepia(72%) brightness(100%) saturate(2489%) hue-rotate(210deg) contrast(99%)
+    filter: invert(44%) sepia(72%) brightness(100%) saturate(2489%) hue-rotate(210deg) contrast(99%);
 }
 
 .item-sponsor a:hover {
