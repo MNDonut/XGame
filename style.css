@@ -1,0 +1,523 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    user-select: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    outline: none;
+}
+
+
+/*==================== HEADER ====================*/
+
+
+header {
+    display: grid;
+    background-color: black;
+    grid-template-columns: 4fr;
+    grid-template-rows: 70px 100px;
+    grid-template-areas: 
+    "h1"
+    "h2";
+    padding: 0 5%;
+}
+
+
+/*==================== UP HEADER ====================*/
+
+
+.up {
+    display: grid;
+    grid-area: h1;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: 
+                "cyb logo soc";
+    border-bottom: 1px solid #3d3b3b;
+    align-items: center;
+}
+
+.header_text {
+    grid-area: cyb;
+    text-align: center;
+}
+
+.logo {
+    grid-area: logo;
+    align-items: center;
+    text-align: center;
+}
+
+.social-list {
+    display: flex;
+    grid-area: soc;
+    justify-content: flex-end;
+}
+
+.social-item a {
+    margin-left: 20px;
+    color: white;
+    transition: 0.5s ease;
+}
+
+
+/*==================== DOWN HEADER ====================*/
+
+
+.down {
+    display: grid;
+    grid-area: h2;
+    grid-template-areas: 
+            "menu";
+}
+
+.menu {
+    display: flex;
+    grid-area: menu;
+    align-items: center;
+    text-align: center;
+}
+
+.menu-list {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.menu-item a {
+    color: #38585a;
+    font-size: 18px;
+    font-family: 'Comfortaa', cursive;
+    transition: 0.5s;
+}
+
+
+/*==================== SLIDER ====================*/
+
+
+/*     Set a height of div with slides and blindness     */
+
+.slider {
+    overflow: hidden;
+    max-height: 100vh;
+    filter: brightness(50%);
+    z-index: 1;
+    position: absolute;
+    max-width: 100%;
+}
+
+/*     Hide slides one by one     */
+
+.slider .single-item{
+    position: relative;
+}
+
+/*==================== ARROWS ====================*/
+
+
+.slider .slick-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    font-size: 0;
+    height: 50px;
+    width: 50px;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+    outline-width: 0;           /*HIDE BORDER WHEN IT'S CLICKED*/
+}
+
+.slider .slick-arrow.slick-prev {
+    margin-left: 2%;
+    left: 0;
+    background: url(/img/left-arrow.svg) 0 0 / 100% no-repeat;
+}
+
+.slider .slick-arrow.slick-next {
+    margin-right: 2%;
+    right: 0;
+    background: url(/img/right-arrow.svg) 0 0 / 100% no-repeat;
+}
+
+
+/*==================== MAIN SLIDER TEXT ====================*/
+
+
+.main-title {
+    z-index: 2;
+    color: white;
+    font-size: 128px;
+    position: absolute;
+    width: 100%;
+    margin-top: 15vh;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+}
+
+.main-subtitle {
+    z-index: 3;
+    color: #9e9e9e;
+    font-size: 40px;
+    position: absolute;
+    width: 80%;
+    margin-top: 50vh;
+    left: 10%;
+    font-family: 'Roboto Slab', serif;
+    text-align: center; 
+}
+
+
+/*==================== LIST OF SPONSORS ====================*/
+
+
+.sponsors {
+    height: 20vh;
+    width: 100%;
+    background: black;
+    color: white;
+    font-size: 16px;
+}
+
+.list-sponsors {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: space-around;
+    text-align: center;
+    height: 20vh;
+    align-items: center;
+}
+
+.item-sponsor, .item-sponsor a {
+    color: #343a40;
+    font-size: 200%;
+    transition: 0.5s ease;
+}
+
+
+/*==================== CYBERSPORT ====================*/
+
+
+.cybersport {
+    display: grid;
+    width: 100%;
+    height: 80vh;
+    background-color: #0f0f0f;
+    grid-template-columns: 0.5fr 2.5fr 3fr;
+    grid-template-areas: 
+                ". T I";
+}
+
+.cybersport-text {
+    display: grid;
+    max-height: 80vh;
+    grid-area: T;
+    grid-template-rows: 0.5fr 1fr 3fr;
+    color: white;
+    padding-right: 5%;
+}
+
+.ctext1 {
+    display: flex;
+    align-items: flex-end;
+    color: #3786ff;
+    font-size: 2vw;
+    font-family: 'Comfortaa', cursive;
+}
+
+.ctext2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 4vw;
+    display: flex;
+    align-items: center;
+}
+
+.ctext3 {
+    font-family: 'Comfortaa', cursive;
+    color: #848484;
+    font-size: 2.5vh;
+    line-height: 150%;
+}
+
+.cybersport-img {
+    display: flex;
+    grid-area: I;
+    position: relative;
+    align-items: center;
+}
+
+.cybersport-img img {
+    max-height: 80vh;
+    max-width: 50vw;
+}
+
+
+/*==================== GAMES ====================*/
+
+
+
+.games {
+    height: 100vh;
+    width: 100%;
+    background: #000;
+}
+
+.games h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 3vw;
+    color: #3786ff;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.game-list {
+    display: grid;
+    color: white;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+    margin: 5% 10% 0;
+}
+
+.game-item {
+    display: grid;
+    height: 60vh;
+    grid-template-rows: 1fr 4fr 1fr;
+    background-color: #000000;
+    overflow: hidden;
+    margin: 0 5%;
+}
+
+.game-name {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    font-size: 2vw;
+    max-width: 100%;
+    font-family: 'Roboto Slab', serif;
+    word-wrap: break-word;
+}
+
+.game-pic {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.game-button {
+    margin-top: 5%;
+    height: 70%;
+    width: 100%;
+    color: #257bfd;
+    background: linear-gradient(to left, white 50%, #257bfd 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: 1s ease;
+    border: 0;
+    outline: none;
+    font-family: 'Roboto Slab', serif;
+    font-size: 150%;
+}
+
+
+/*====================VIDEO====================*/
+
+
+.video {
+    display: flex;
+    max-width: 100%;
+    height: 20vh;
+    background: url(/img/video.jpg);
+    box-shadow: inset 0px 16px 60px -1px #000000b8;
+    justify-content: center;
+    align-items: center;
+}
+
+.video button {
+    background: #4b9bf6;
+    color: white;
+    text-align: center;
+    border: 0;
+    font-size: 24px;
+    outline: none;
+    height: 60px;
+    width: 60px;
+    transition: 0.5s ease-in-out;
+    animation: ease-in-out infinite alternate;
+    animation-name: size;
+    animation-duration: 2.5s;
+}
+
+
+/*===================NEWS=====================*/
+
+.news {
+    height: 100vh;
+    width: 100%;
+    background: #000;
+}
+
+.news h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 3vw;
+    color: #3786ff;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.news-list {
+    display: grid;
+    color: white;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    margin: 5% 10% 0;
+}
+
+.news-item {
+    display: grid;
+    height: 60vh;
+    grid-template-rows: 2fr 1.5fr 1fr;
+    background-color: none;
+    margin: 0 5%;
+}
+
+.news span {
+    display: flex;
+    font-size: 4vh;
+    color: #3786ff;
+    font-family: 'Roboto Slab', serif;
+    align-items: center;
+}
+
+.news-name {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    font-size: 2vw;
+    max-width: 100%;
+    font-family: 'Roboto Slab', serif;
+    word-wrap: break-word;
+}
+
+.news-pic {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.news-button {
+    margin-top: 5%;
+    height: 10vh;
+    width: 80%;
+    color: #257bfd;
+    background: linear-gradient(to left, white 50%, #257bfd 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: 1s ease;
+    border: 0;
+    outline: none;
+    font-family: 'Roboto Slab', serif;
+    font-size: 120%;
+}
+
+/*====================CONTACTS====================*/
+
+.contacts {
+    height: 80vh;
+    max-width: 100%;
+    background: #0a0a0a;
+    text-align: center;
+}
+
+.contacts h2 {
+    font-size: 30px;
+    color: #3786ff;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    padding-top: 1%;
+}
+
+.backform {
+    display: grid;
+    margin-top: 2%;
+    height: 80%;
+    color: #405e8b;
+    font-family: 'Roboto Slab', serif;
+    grid-template-columns: 2fr 0.5fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+                "FN FBUT FT"
+                "FE FBUT FT";
+}
+
+textarea {
+    color: #d66b07;
+    font-family: 'Roboto Slab', serif;
+    resize: none;
+    width: 70%;
+    height: 70%;
+    outline: none;
+    border-radius: 56px;
+    border-color: teal;
+    padding: 10px 40px;
+}
+input {
+    color: #d66b07;
+    font-family: 'Roboto Slab', serif;
+    padding: 0 10px;
+    width: 90%;
+    height: 20%;
+    outline: none;
+    border-radius: 25px;
+    border-color: teal;
+    text-align: center;
+}
+
+.name-div {
+    grid-area: FN;
+}
+
+.email-div {
+    grid-area: FE;
+}
+
+.text-div {
+    grid-area: FT;
+}
+
+.backform input {
+    margin-top: 8%;
+}
+
+.backform textarea {
+    margin-top: 2%;
+}
+
+.send-div {
+    display: flex;
+    grid-area: FBUT;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.send-div button {
+    height: 50px;
+    width: 50px;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: #1bf8b6;
+    transition: 0.5s ease-in-out;
+}
