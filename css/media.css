@@ -28,24 +28,24 @@
     .main-subtitle {
         font-size: 30px;
     }
+    .ctext1 {
+        height: 0;
+        font-size: 0;
+    }
 }
 
 /*розміщення game-items and news-items на всю ширину та збільшення шрифту*/
 
-@media (max-width: 716px){
+@media (max-width: 760px){
     .cybersport {
         grid-template-columns: 0fr 2fr 1fr;
-    }
-    .ctext1 {
-        height: 0;
-        font-size: 0;
     }
     .cybersport-text {
         grid-template-rows: 0fr 1fr 5fr;
         margin-left: 2%;
     }
     .game-list {
-        margin: 5% 2%;
+        margin: 10% 2%;
     }
     .game-name {
         font-size: 16px;
@@ -57,8 +57,7 @@
 
 /*шрифт у кіберспорт. Перебудова форми*/
 
-@media (max-width: 600px){
-
+@media (max-width: 650px){
     .cybersport {
         grid-template-columns: 0 2fr 0;
         grid-template-areas: 
@@ -74,14 +73,13 @@
         font-size: 14px;
     }
     .cybersport-img {
-        overflow: hidden;
+        display: none;
     }
-
     .contacts {
-        height: 100vh;
+        height: 145vh;
     }
     .backform {
-        margin-top: 5%;
+        margin-top: 8%;
         grid-template-columns: 1fr;
         grid-template-rows: 2fr 2fr 3fr 1fr;
         grid-template-areas: 
@@ -90,14 +88,11 @@
                 "FT"
                 "FBUT";
     }
-    .backform input {
-        margin-top: 4%;
-    }
-    .send-div {
-        padding-top: 5%;
+    .name-div, .email-div, .text-div, .send-div {
+        margin-top: 5%;
     }
     textarea {
-        height: 15vh;
+        height: 23vh;
     }
     input {
         height: 8vh;
@@ -136,7 +131,8 @@
     }
 }
 
-/*розмір тексту на головному слайдері, розмір спонсорів, про гру текст вище*/
+/*розмір тексту на головному слайдері, розмір спонсорів, 
+про гру текст вище*/
 
 @media (max-width: 550px){
     .main-title {
@@ -144,13 +140,39 @@
         margin-top: 25vh;
     }
     .main-subtitle {
-        margin-top: 51vh;
+        margin-top: 40vh;
     }
     .item-sponsor {
         font-size: 150%;
     }
     .game-button {
-        padding-bottom: 3px;
+        padding-bottom: 5px;
+    }
+    
+}
+
+@media (max-width: 500px) {
+    .game-list {
+        margin-top: 15%;
+    }
+}
+
+/*переформування up header*/
+
+@media (max-width: 480px){
+    .up {
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas: 
+                    "logo soc";
+    }
+    .menu-item a {
+        font-size: 14px;
+    }
+    .header_text {
+        font-size: 0;
+    }
+    .logo {
+        text-align: start;
     }
 }
 
@@ -159,13 +181,79 @@
 @media (max-width: 450px){
     .main-subtitle {
         font-size: 24px;
+        padding-top: 2%;
     }
 }
 
-/*зменшення заголовку в cybersport*/
+/*зменшення головного тексту та меню*/
 
-@media (max-width: 354px) {
+@media (max-width: 420px) {
+    .main-title {
+        font-size: 45px;
+    }
+    .main-subtitle {
+        font-size: 24px;
+    }
+    .menu-item a {
+        font-size: 12px;
+    }
+}
+
+/*зменшення заголовку в cybersport
+ховаю логотип
+центрую соц мережі
+зменшую header*/
+
+@media (max-width: 355px) {
     .ctext2 {
         font-size: 22px;
+    }
+    .main-subtitle {
+        margin-top: 35vh;
+    }
+    .logo {
+        display: none;
+    }
+    header {
+        padding: 0;
+        height: 70px;
+    }
+    .up {
+        display: flex;
+    }
+    .social-list {
+        width: 100vw;
+        justify-content: space-around;
+    }
+    .social-item a {
+        margin-left: 0;
+        font-size: 24px;
+    }
+    .down {
+        display: none;
+    }
+}
+
+@media (max-width: 300px) {
+    .ctext3 {
+        font-size: 12px;
+    }
+    .main-title {
+        font-size: 36px;
+    }
+    .main-subtitle {
+        font-size: 18px;
+        padding-top: 20%;
+    }
+    .item-sponsor {
+        font-size: 100%;
+    }
+}
+
+/*текст кнопок news*/
+
+@media (max-width: 260px) {
+    .news-button {
+        font-size: 80%;
     }
 }
