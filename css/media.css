@@ -11,7 +11,7 @@
 
 /*розмір тексту в новинах*/
 
-@media (max-width: 850px){
+@media (max-width: 870px){
     .news span {
         font-size: 3vh;
     }
