@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(/img/details/bg.jpg) center top / cover;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    height: 11vh;
+    max-width: 100%;
+    text-align: center;
+    background: black;
+}
+
+.main {
+    height: 500vh;
+    max-width: 100%;
+    display: grid;
+    margin: 4vh 2vw;
+    grid-template-columns: 3fr 1fr;
+    grid-column-gap: 4vw;
+    grid-template-areas: 
+                    "c s";
+}
+
+.content {
+    height: 100%;
+    display: grid;
+    grid-area: c;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-row-gap: 10vh;
+}
+
+.content-item {
+    background: #0c0a0a;
+    box-shadow: 0px 2px 30px 20px #000000;
+    overflow: hidden;
+}
+
+.side {
+    height: 90vh;
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    grid-row-gap: 5vh;
+    grid-area: s;
+    position: sticky;
+    top: 5vh;
+    text-align: center;
+    z-index: 999;
+    color: white;
+}
+
+.fab {
+    color: white;
+    transform: scale(1.5);
+}
+
+.social {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+
+.social-h2, .news-h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Comfortaa', cursive;
+}
+
+.social-list {
+    height: 100%;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.social, .news {
+    box-shadow: 0px 2px 20px 10px #000000;
+    background: #0c0a0a;
+}
+
+.news {
+    display: grid;
+    grid-template-rows: 0.5fr 2fr;
+}
+
+.news-list {
+    display: grid;
+    height: 100%;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.news-item {
+    text-align: left;
+    padding: 0 10px;
+}
+
+.news-item a {
+    font-family: 'Comfortaa', cursive;
+    color: #0159dd;
+}
+
+.content-item {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    font-family: "Roboto Slab", sans-serif;
+    color: white;
+}
+
+.csgo-bg, .overwatch-bg, .dota-bg, .paladins-bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 72px;
+    box-shadow: 0px 2px 20px 10px #000000 inset;
+    transition: 0.5s ease-in-out;
+}
+
+.csgo-bg {
+    background: url(/img/game-bg/csgo-bg.png) no-repeat center top / cover;
+    background-position-y: 10%;
+}
+
+.overwatch-bg {
+    background: url(/img/game-bg/overwatch-bg.jpg) no-repeat center top / cover;
+    background-position-y: 30%;
+}
+
+.dota-bg {
+    background: url(/img/game-bg/dota-bg.jpg) no-repeat center top / cover;
+    background-position-y: 25%;
+}
+
+.paladins-bg {
+    background: url(/img/game-bg/paladins-bg.jpg) no-repeat center top / cover;
+    background-position-y: 10%;
+}
+
+.game-text {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 10px 10px;
+    font-size: 140%;
+    color: #d3d3d3;
+}

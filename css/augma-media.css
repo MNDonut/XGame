@@ -1,0 +1,204 @@
+@media (max-width: 970px) {
+    .slider span {
+        font-size: 2.5vw;
+    }
+    .info-item span {
+        font-size: 2vw;
+    }
+    .center-item ul li {
+        grid-template-rows: 0.5fr 1fr;
+    }
+    .center-item ul li span {
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 700px) {
+    header {
+        font-size: 20px;
+        grid-template-columns: 1fr 0fr 1fr;
+    }
+    h1 {
+        font-size: 20vw;
+    }
+    .main-subtitle {
+        font-size: 6vw;
+    }
+    .logo img {
+        transform: scale(0.7);
+    }
+    .statistics-text {
+        padding-top: 30%;
+    }
+    .slider span {
+        font-size: 3vw;
+    }
+    .info-item span {
+        font-size: 2.5vw;
+    }
+    .center-item {
+        margin: 0 1.5%;
+    }
+    .center-item ul li span {
+        font-size: 3vw;
+    }
+    .center-button {
+        font-size: 3vw;
+    }
+    .center-name {
+        font-size: 5vw;
+    }
+    .center-item ul li i {
+        font-size: 3vw;
+    }
+    input, select, textarea {
+        font-size: 18px;
+    }
+    .comment-h2 {
+        display: flex;
+        align-items: center;
+        padding-left: 10%;
+    }
+}
+
+@media (max-width: 650px) {
+    .augma-text {
+        grid-template-rows: 0.5fr 2fr;
+    }
+    .augma-text p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        grid-template-columns: 1fr 1fr;
+    }
+    .logo {
+        display: none;
+    }
+    form {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "name       price"
+        "send     message"
+        "email    message";
+    }
+    .center-button {
+        font-size: 4vw;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .main-subtitle {
+        font-size: 8vw;
+    }
+    .augma-text p {
+        font-size: 4vw;
+    }
+    .comment-h2 {
+        font-size: 3vw;
+    }
+    .slider span {
+        font-size: 3.5vw;
+    }
+    .info-item span {
+        font-size: 3vw;
+    }
+    .statistics-text span {
+        font-size: 6vw;
+        word-break: break-all;
+    }
+    .statistics-text h2 {
+        font-size: 9vw;
+    }
+}
+
+@media (max-width: 450px) {
+    .statistics {
+        height: 100vh;
+        grid-template-columns: 2fr 1.5fr;
+        grid-template-rows: 1fr 2fr;
+        grid-template-areas: 
+                        "st st"
+                        "ss ss";
+    }
+    .statistics-text {
+        margin: 50px 0;
+        padding: 0;
+    }
+    .comment-h2 {
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        font-size: 7vw;
+        height: 10vh;
+    }
+    .slider span {
+        font-size: 5vw;
+    }
+    .prices .slick-track, .slick-list.draggable {
+        height: 90vh;
+    }
+    form {
+        height: 130vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+                        "."
+                        "name"
+                        "."
+                        "email"
+                        "."
+                        "price"
+                        "."
+                        "message"
+                        "send";
+    }
+    .send {
+        padding-top: 0;
+        padding-bottom: 15%;
+    }
+}
+
+@media (max-width: 420px){
+    .augma-text p {
+        font-size: 18px;
+    }
+    .information {
+        max-width: 100%;
+        height: 220vh;
+        background: #0c0a0a;
+    }
+    .info-item span {
+        font-size: 5vw;
+    }
+    .info-list {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        padding: 0;
+        margin: 0;
+    }
+    .center-name {
+        font-size: 8vw;
+    }
+    .center-button {
+        font-size: 5vw;
+    }
+    .center-item ul li span {
+        font-size: 4vw;
+    }
+    .menu-list {
+        display: none;
+    }
+    .logo {
+        display: flex;
+        zoom: 2;
+    }
+    header {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+}

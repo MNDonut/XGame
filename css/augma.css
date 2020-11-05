@@ -30,6 +30,9 @@ header {
     background: black;
     font-size: 24px;
     font-family: "Pangolin", sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 
 .menu-list {
@@ -40,7 +43,9 @@ header {
 
 .menu-list li a {
     color: #5e4d4d;
+    transition: 0.5s ease;
 }
+
 
 /*==================== MAIN ====================*/
 
@@ -58,14 +63,14 @@ h1 {
     align-self: center;
     color: white;
     font-family: 'Commissioner', sans-serif;
-    font-size: 10vw;
+    font-size: 12vw;
     z-index: 2;
 }
 
 .main-subtitle {
     color: #25c5c5;
     z-index: 2;
-    font-size: 4vw;
+    font-size: 5vw;
 }
 
 
@@ -225,7 +230,7 @@ h1 {
 
 .info-item span {
     font-family: "Pangolin", sans-serif;
-    font-size: 1.5vw;
+    font-size: 1.7vw;
     padding: 0 5%;
 }
 
@@ -253,14 +258,15 @@ h1 {
 }
 
 .center-item {
+    animation: levitation;
     height: 80vh;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 3fr 0.5fr;
-    overflow: hidden;
     border-radius: 5%;
     margin: 0 2.5%;
     background: #00000080;
+    overflow: hidden;
 }
 
 .center-name {
@@ -273,19 +279,113 @@ h1 {
 }
 
 .center-list {
-    background: wheat;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr;
+    background: #00000080;
+    align-items: center;
+}
+
+.center-item ul li {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    color: orangered;
+    font-size: 1.5vw;
+}
+
+.center-item ul span {
+    font-family: "Roboto Slab";
+    padding: 0 10px;
+    word-break: keep-all;
+}
+
+/* шаблон тарифів 1 2 6 */
+
+.center-list1, .center-list2, .center-list6 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr;
+    background: #00000080;
+    align-items: center;
+}
+
+.center-list1 {
+    grid-template-areas: 
+                "first-price first-clock"
+                "first-info first-info";
+}
+
+.center-list2 {
+    grid-template-areas: 
+                    "second-price second-clock"
+                    "second-info second-info";
+}
+
+.center-list6 {
+    grid-template-areas: 
+                    "six-price six-clock"
+                    "six-info six-info";
+}
+
+.center-description1 {
+    grid-area: first-price;
+}
+
+.center-description1-1 {
+    grid-area: first-clock;
+}
+
+.center-description1-2 {
+    grid-area: first-info;
+}
+
+.center-description2 {
+    grid-area: second-price;
+}
+
+.center-description2-1 {
+    grid-area: second-clock;
+}
+
+.center-description2-2 {
+    grid-area: second-info;
+}
+
+.center-description6 {
+    grid-area: six-price;
+}
+
+.center-description6-1 {
+    grid-area: six-clock;
+}
+
+.center-description6-2 {
+    grid-area: six-info;
+}
+
+.fa-money-check-alt, .fa-info-circle, .fa-clock, .fa-gift {
+    color: white;
+    align-items: flex-end;
+    display: flex;
+    justify-content: center;
 }
 
 .center-button {
     display: flex;
     align-items: center;
     font-size: 2vw;
-    color: #1bf8b6;
     font-family: "Roboto Slab";
     justify-content: space-around;
     width: 100%;
     background: black;
     border: none;
+}
+
+.to-contacts {
+    color: white;
+    text-decoration: none;
+    color: #00fdb1;
 }
 
 .slider1 .slick-arrow {
@@ -311,4 +411,107 @@ h1 {
     margin-right: 2%;
     right: 0;
     background: url(/img/right-arrow.svg) 0 0 / 100% no-repeat;
+}
+
+
+/*==================== Backform ====================*/
+
+
+form {
+    height: 80vh;
+    max-width: 100%;
+    display: grid;
+    background: #0c0a0a;
+    grid-template-columns: 1fr 0.5fr 1fr;
+    grid-template-rows: 0.5fr  0.5fr 1fr;
+    grid-template-areas: 
+                    "name  .     price"
+                    ".    send message"
+                    "email .   message";
+}
+
+select {
+    width: 80%;
+    height: 10vh;
+    border: 3px solid;
+    border-radius: 50px;
+    border-color: #007c80;
+    font-family: 'Roboto Slab', serif;
+    background: #1d1717;
+    color: #0167ff;
+    font-size: 20px;
+    text-align-last:center;
+}
+
+textarea {
+    height: 50vh;
+    width: 80%;
+    padding: 0 20px;
+    resize: none;
+    text-align: center;
+    background: #1d1717;
+    color: #0167ff;
+    border: 3px solid;
+    border-radius: 50px;
+    border-color: #007c80;
+    font-family: 'Roboto Slab', serif;
+    font-size: 24px;
+}
+
+input {
+    width: 90%;
+    height: 10vh;
+    border: 3px solid;
+    color: #0167ff;
+    font-family: 'Roboto Slab', serif;
+    padding: 0 10px;
+    font-size: 24px;
+    outline: none;
+    border-radius: 50px;
+    border-color: #007c80;
+    text-align: center;
+    background: #1d1717;
+}
+
+.send {
+    height: 50px;
+    width: 50px;
+    font-size: 48px;
+    background: none;
+    border: none;
+    transition: 0.5s ease-in-out;
+    padding-top: 10%;
+}
+
+.contacts-name, .contacts-email, .contacts-price, 
+.contacts-message, .contacts-button {
+    text-align: center;
+    align-self: center;
+    max-width: 100%;
+}
+
+.contacts-name {
+    grid-area: name;
+}
+
+.contacts-email {
+    grid-area: email;
+}
+
+.contacts-price {
+    grid-area: price;
+}
+
+.contacts-message {
+    grid-area: message;    
+}
+
+.contacts-button {
+    grid-area: send;
+}
+
+.mail i, .buy {
+    color: #1bf8b6;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
 }

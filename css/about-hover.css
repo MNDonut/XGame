@@ -1,0 +1,8 @@
+.social-item a i:hover {
+    transition: 0.3s ease;
+    color: #3786ff;
+}
+
+.csgo-bg:hover, .overwatch-bg:hover, .dota-bg:hover, .paladins-bg:hover {
+    transform: scale(1.1);
+}

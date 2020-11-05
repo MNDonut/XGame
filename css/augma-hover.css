@@ -1,0 +1,34 @@
+.menu-item a:hover {
+    color: #00ffdd;
+}
+
+.buy:hover {
+    transform: scale(1.1);
+}
+
+.mail i:hover {
+    transform: scale(1.5);
+    color: #00eeff;
+}
+
+@keyframes levitation {
+    0% {
+        transform: 0;
+    }
+    100% {
+        transform: translateY(-2%);  
+    }
+}
+
+.center-item:hover {
+        animation-duration: 1s;
+        animation-name: levitation;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out; /*ease - плавно початок і кінець*/
+        animation-direction: alternate; /*туди і назад*/
+    
+}
+
+select:hover {
+    cursor: pointer;
+}
