@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    user-select: none;
+}
+
+body {
+    background: #0c0a0a;
+}
+
+h2 {
+    align-self: center;
+    text-align: center;
+    color: #025de6;
+    font-size: 36px;
+}
+
+header {
+    height: 11vh;
+    max-width: 100%;
+    text-align: center;
+    background: #0c0a0a;
+}
+
+.main {
+    height: 250vh;
+    max-width: 100%;
+    margin: 4vh 2vw;
+}
+
+.content {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 10vh;
+}
+
+.content-item {
+    background: #0c0a0a;
+    box-shadow: 0px 2px 30px 20px #000000;
+    display: grid;
+    grid-template-rows: 300px 0.5fr 2fr;
+    font-family: "Roboto Slab", sans-serif;
+    color: white;
+}
+
+.pic1, .pic2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 72px;
+    box-shadow: 0px 2px 20px 10px #000000 inset;
+    transition: 0.5s ease-in-out;
+}
+
+.pic1 {
+    background: url(/img/news/news1.jpeg) no-repeat center top / cover;
+    background-position-y: 30%;
+}
+
+.pic2 {
+    background: url(/img/news/news2.jpeg) no-repeat center top / cover;
+    background-position-y: 24%;
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 10px 10px;
+    font-size: 140%;
+    color: #d3d3d3;
+}

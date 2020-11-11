@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+html {
+    user-select: none;
+}
+
 body {
     background: url(/img/details/bg.jpg) center top / cover;
 }
@@ -46,6 +50,10 @@ header {
     background: #0c0a0a;
     box-shadow: 0px 2px 30px 20px #000000;
     overflow: hidden;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    font-family: "Roboto Slab", sans-serif;
+    color: white;
 }
 
 .side {
@@ -110,13 +118,6 @@ header {
 .news-item a {
     font-family: 'Comfortaa', cursive;
     color: #0159dd;
-}
-
-.content-item {
-    display: grid;
-    grid-template-rows: 1fr 2fr;
-    font-family: "Roboto Slab", sans-serif;
-    color: white;
 }
 
 .csgo-bg, .overwatch-bg, .dota-bg, .paladins-bg {

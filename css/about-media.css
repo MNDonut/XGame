@@ -34,7 +34,7 @@
 
 @media (max-width: 410px) {
     .main {
-        grid-row-gap: 20vh;
+        grid-row-gap: 60vh;
     }
     .csgo-bg, .overwatch-bg, .dota-bg, .paladins-bg {
         font-size: 48px;
@@ -52,6 +52,6 @@
         grid-template-rows: 0.5fr 1.5fr;
     }
     .main {
-        grid-row-gap: 45vh;
+        grid-row-gap: 80vh;
     }
 }

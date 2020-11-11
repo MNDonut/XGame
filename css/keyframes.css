@@ -10,6 +10,6 @@
 @keyframes size {
     100% {
         transform: scale(1.4);
-        border-radius: 50%;
+        border-radius: 25%;
     }
 }

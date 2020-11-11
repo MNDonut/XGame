@@ -99,6 +99,7 @@
 }
 
 /*збільшення новин та ігор*/
+/*переформування up header*/
 
 @media (max-width: 554px){
     .news {
@@ -146,18 +147,6 @@
     .game-button {
         padding-bottom: 5px;
     }
-    
-}
-
-@media (max-width: 500px) {
-    .game-list {
-        margin-top: 15%;
-    }
-}
-
-/*переформування up header*/
-
-@media (max-width: 480px){
     .up {
         grid-template-columns: 2fr 1fr;
         grid-template-areas: 
@@ -171,6 +160,12 @@
     }
     .logo {
         text-align: start;
+    }
+}
+
+@media (max-width: 500px) {
+    .game-list {
+        margin-top: 15%;
     }
 }
 

@@ -163,6 +163,15 @@
 }
 
 @media (max-width: 420px){
+    header {
+        overflow-x: hidden;
+    }
+    .prices {
+        overflow: hidden;
+    }
+    .slick-track {
+        width: 100%;
+    }
     .augma-text p {
         font-size: 18px;
     }
@@ -194,7 +203,7 @@
     }
     .logo {
         display: flex;
-        zoom: 2;
+        zoom: 1.5;
     }
     header {
         display: flex;
